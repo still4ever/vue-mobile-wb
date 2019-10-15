@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>1</title>
+  </head>
+  <body>
+    <form
+      name="punchout_form"
+      method="post"
+      action="https://openapi.alipaydev.com/gateway.do?charset=UTF-8&method=alipay.trade.wap.pay&sign=BirRfYQ2lEc3L40kh0J%2FjKPmTSDBZuVSR4bmTHIJ23QDCVeEsbLO8jI6LrjW%2BWywy9RiTWBagfpjRr8z4zm0ptPNbt1l3hecR5kavHgNcnFqVFwfbrNCAzHiG3Bk7euT9%2F6lygJuJs3JPvcKA02EpwPMdA4VEhbf6XVl9PcJKcxI1VjcC6WBZLMrlM8n4GkLXogYRe%2FxDNhq0DEItOWYRGn%2B6wjZRN5Qj6eA0L%2F94Fv9sfWfLn82bZSzcJYBJN9TWalse98bWRhULh3Ily24pE0ROJsmqheXcu10XK0zYnv3zZCsCQ464AzkfORimZ9vs7j9K2V0AwR%2FAnf%2BCczJ3w%3D%3D&notify_url=http%3A%2F%2F120.79.103.100%3A8080%2Fapi%2Forder%2Fnotify&version=1.0&app_id=2016100100640583&sign_type=RSA2&timestamp=2019-08-07+15%3A27%3A51&alipay_sdk=alipay-sdk-java-3.7.110.ALL&format=json"
+    >
+      <input
+        type="hidden"
+        name="biz_content"
+        value="{&quot;body&quot;:&quot;微信支付&quot;,&quot;out_trade_no&quot;:&quot;608682580178370560&quot;,&quot;product_code&quot;:&quot;QUICK_MSECURITY_PAY&quot;,&quot;subject&quot;:&quot;微信支付&quot;,&quot;timeout_express&quot;:&quot;30m&quot;,&quot;total_amount&quot;:&quot;2888.00&quot;}"
+      />
+      <input type="submit" value="立即支付" style="display:none" />
+    </form>
+    <script>
+      // document.forms[0].submit();
+    </script>
+  </body>
+</html>

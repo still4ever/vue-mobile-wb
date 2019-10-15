@@ -1,0 +1,41 @@
+{
+  "name": "calicare",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "start": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "publish": "npm run build && pm2 reload app",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "amfe-flexible": "^2.2.1",
+    "autoprefixer": "^9.6.1",
+    "axios": "^0.19.0",
+    "babel-plugin-import": "^1.12.0",
+    "bignumber.js": "^9.0.0",
+    "core-js": "^2.6.5",
+    "dayjs": "^1.8.14",
+    "postcss-pxtorem": "^4.0.1",
+    "register-service-worker": "^1.6.2",
+    "vant": "^2.0.6",
+    "vue": "^2.6.10",
+    "vue-clipboard2": "^0.3.0",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-plugin-eslint": "^3.8.0",
+    "@vue/cli-plugin-pwa": "^3.8.0",
+    "@vue/cli-service": "^3.8.0",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
