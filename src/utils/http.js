@@ -36,7 +36,7 @@ httpRequest.interceptors.response.use(
     const { status, data } = response;
     if (status === 200) {
       // 针对token过期
-      if (/10010|10050|10020/.test(data.code)) {
+      if (/10010|10020|10030|10050/.test(data.code)) {
         Toast.fail({
           message: data.msg,
           duration: 800,
