@@ -16,13 +16,13 @@ const showMenuList = ["home", "partner", "cart", "user"];
 
 /* 路由发生变化修改页面title */
 router.beforeEach((to, from, next) => {
-  console.log(to.name, showMenuList.includes(to.name));
-  Vue.prototype.isShowMenu = showMenuList.includes(to.name);
-  Vue.prototype.activeIdx = showMenuList.indexOf(to.name);
-  if (to.meta.title) {
-    document.title = to.meta.title;
-  }
-  next();
+    console.log(to.name, showMenuList.includes(to.name));
+    Vue.prototype.isShowMenu = showMenuList.includes(to.name);
+    Vue.prototype.activeIdx = showMenuList.indexOf(to.name);
+    if (to.meta.title) {
+        document.title = to.meta.title;
+    }
+    next();
 });
 
 Vue.use(Dialog);
@@ -32,7 +32,7 @@ Vue.component("empty", Empty);
 Vue.component("MixList", MixList);
 
 new Vue({
-  router,
-  store,
-  render: h => h(App)
+    router,
+    store,
+    render: h => h(App)
 }).$mount("#app");
