@@ -1,40 +1,40 @@
 <template>
-  <div id="app">
-    <router-link v-if="!isShow && isLogin" to="/" class="back_home"
-      ><icon name="arrow-left"
-    /></router-link>
-    <tabbar v-model="active" v-if="isShow">
-      <tabbar-item replace to="/home">
-        <span>首页</span>
-        <svg slot="icon" slot-scope="props" class="icon" aria-hidden="true">
-          <use v-if="props.active" xlink:href="#iconfont-zhuye"></use>
-          <use v-else xlink:href="#iconfont-zhuyedefuben"></use>
-        </svg>
-      </tabbar-item>
-      <tabbar-item replace to="/partner">
-        <span>合伙人</span>
-        <svg slot="icon" slot-scope="props" class="icon" aria-hidden="true">
-          <use v-if="props.active" xlink:href="#iconfont-hehuo"></use>
-          <use v-else xlink:href="#iconfont-hehuodefuben"></use>
-        </svg>
-      </tabbar-item>
-      <tabbar-item replace to="/goods/cart">
-        <span>购物车</span>
-        <svg slot="icon" slot-scope="props" class="icon" aria-hidden="true">
-          <use v-if="props.active" xlink:href="#iconfont-gouwuche"></use>
-          <use v-else xlink:href="#iconfont-cart"></use>
-        </svg>
-      </tabbar-item>
-      <tabbar-item replace to="/user">
-        <span>我的</span>
-        <svg slot="icon" slot-scope="props" class="icon" aria-hidden="true">
-          <use v-if="props.active" xlink:href="#iconfont-wo"></use>
-          <use v-else xlink:href="#iconfont-wodefuben"></use>
-        </svg>
-      </tabbar-item>
-    </tabbar>
-    <router-view />
-  </div>
+    <div id="app">
+        <router-link v-if="!isShow && isLogin" to="/" class="back_home">
+            <icon name="arrow-left"/>
+        </router-link>
+        <tabbar v-model="active" v-if="isShow">
+            <tabbar-item replace to="/home">
+                <span>首页</span>
+                <svg slot="icon" slot-scope="props" class="icon" aria-hidden="true">
+                <use v-if="props.active" xlink:href="#iconfont-zhuye"></use>
+                <use v-else xlink:href="#iconfont-zhuyedefuben"></use>
+                </svg>
+            </tabbar-item>
+            <tabbar-item replace to="/partner">
+                <span>合伙人</span>
+                <svg slot="icon" slot-scope="props" class="icon" aria-hidden="true">
+                <use v-if="props.active" xlink:href="#iconfont-hehuo"></use>
+                <use v-else xlink:href="#iconfont-hehuodefuben"></use>
+                </svg>
+            </tabbar-item>
+            <tabbar-item replace to="/goods/cart">
+                <span>购物车</span>
+                <svg slot="icon" slot-scope="props" class="icon" aria-hidden="true">
+                <use v-if="props.active" xlink:href="#iconfont-gouwuche"></use>
+                <use v-else xlink:href="#iconfont-cart"></use>
+                </svg>
+            </tabbar-item>
+            <tabbar-item replace to="/user">
+                <span>我的</span>
+                <svg slot="icon" slot-scope="props" class="icon" aria-hidden="true">
+                <use v-if="props.active" xlink:href="#iconfont-wo"></use>
+                <use v-else xlink:href="#iconfont-wodefuben"></use>
+                </svg>
+            </tabbar-item>
+        </tabbar>
+        <router-view />
+    </div>
 </template>
 
 <script>
@@ -42,23 +42,23 @@ import { Tabbar, TabbarItem, Icon } from "vant";
 import { isLogin } from "./utils/util";
 
 export default {
-  components: {
-    Tabbar,
-    TabbarItem,
-    Icon
-  },
-  data() {
-    return {
-      active: 0,
-      isShow: this.isShowMenu,
-      isLogin: isLogin()
-    };
-  },
-  mounted() {},
-  updated() {
-    this.isShow = this.isShowMenu;
-    this.active = this.activeIdx;
-  }
+    components: {
+        Tabbar,
+        TabbarItem,
+        Icon
+    },
+    data() {
+        return {
+            active: 0,
+            isShow: this.isShowMenu,
+            isLogin: isLogin()
+        };
+    },
+    mounted() {},
+    updated() {
+        this.isShow = this.isShowMenu;
+        this.active = this.activeIdx;
+    }
 };
 </script>
 

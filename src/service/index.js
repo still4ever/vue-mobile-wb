@@ -9,13 +9,13 @@ import bankCardService from "./items/bankCard";
 import AliPaySettingService from "./items/aliPaySetting";
 
 export {
-  UserService,
-  AddressService,
-  IntegralService,
-  GoodsService,
-  CartService,
-  OrderService,
-  partnerService,
-  bankCardService,
-  AliPaySettingService
+    UserService,
+    AddressService,
+    IntegralService,
+    GoodsService,
+    CartService,
+    OrderService,
+    partnerService,
+    bankCardService,
+    AliPaySettingService
 };
