@@ -1,23 +1,23 @@
 <template>
-  <section class="recommend">
-    <div class="recommend-title">
-      <Icon name="zu5" class-prefix="iconfont" />猜你喜欢
-    </div>
-    <div class="recommend-list">
-      <div class="recommend-list-item" v-for="item in [1, 2, 3, 4]">
-        <div class="goods-img">
-          <img src="../assets/img/user_bg.png" alt="" />
+    <section class="recommend">
+        <div class="recommend-title">
+            <Icon name="zu5" class-prefix="iconfont" />猜你喜欢
         </div>
-        <div class="goods-info">
-          <div class="title">紧致修复肌肤问 题折行</div>
-          <div class="foot">
-            <div class="price">￥199</div>
-            <Icon name="shopping-cart-o" />
-          </div>
+        <div class="recommend-list">
+            <div class="recommend-list-item" v-for="item in [1, 2, 3, 4]">
+                <div class="goods-img">
+                    <img src="../assets/img/user_bg.png" alt="" />
+                </div>
+                <div class="goods-info">
+                    <div class="title">紧致修复肌肤问 题折行</div>
+                    <div class="foot">
+                        <div class="price">￥199</div>
+                        <Icon name="shopping-cart-o" />
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 </template>
 
 <script>
